@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_S3_VZurita.notas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#044c84" Padding="5" CornerRadius="0">
+                <Label Text="SISTEMA DE CALIFICACIONES  UISRAEL" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="20"/>
+            </Frame>
+
+            <Entry x:Name="txtNotaS1" Placeholder="* Ingrese la Nota de Seguimiento 1" Keyboard="Numeric"/>
+            <Entry x:Name="txtNotaE1" Placeholder="* Ingrese la Nota del Examen 1" Keyboard="Numeric"/>
+            <Label Text="Nota Pacial 1 (NP1)"/>
+            <Entry x:Name="txtNP1" IsReadOnly="True"/>
+
+            <Entry x:Name="txtNotaS2" Placeholder="* Ingrese la Nota de Seguimiento 2" Keyboard="Numeric"/>
+            <Entry x:Name="txtNotaE2" Placeholder="* Ingrese la Nota del Examen 2" Keyboard="Numeric"/>
+            <Label Text="Nota Pacial 2 (NP2)"/>
+            <Entry x:Name="txtNP2" IsReadOnly="True"/>
+
+            <Label Text="Nota Final = NP1 + NP2"/>
+            <Entry x:Name="txtNF" IsReadOnly="True"/>
+
+            <Label Text="Estado"/>
+            <Entry x:Name="Estado" IsReadOnly="True"/>
+
+            <Button x:Name="btnSumar" BackgroundColor="#0474c4" TextColor="White" Text="Calcular" Clicked="btnSumar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

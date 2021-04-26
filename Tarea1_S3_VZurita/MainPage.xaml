@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1_S3_VZurita.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#044c84" Padding="10" CornerRadius="0">
+            <Label Text="SIGE - SISTEMA INTEGRADO DE GESTIÓN ESTRATÉGICA UISRAEL" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" FontSize="25"/>
+        </Frame>
+        <Label Text="Iniciar Sesión" TextColor="Black" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Por favor ingresa tu usuario y clave. Si tienes algún problema comunícate con el administrador del SIGE-UISRAEL." TextColor="Black" FontSize="16" Padding="30,0,30,0"/>
+        <Frame BackgroundColor="#044c84" Padding="5" CornerRadius="0">
+            <Label Text="Usuario:" TextColor="White" FontSize="22" Padding="30,0,30,0"/>
+        </Frame>
+        <Entry x:Name="txtUsuario"/>
+        <Frame BackgroundColor="#044c84" Padding="5" CornerRadius="0">
+            <Label Text="Clave:" TextColor="White" FontSize="22" Padding="30,0,30,0"/>
+        </Frame>
+        <Entry x:Name="txtClave" IsPassword="True"/>
+
+        <Button x:Name="btnIngresar" Text="Ingresar" TextColor="White" FontSize="20" BackgroundColor="#0474c4" Clicked="btnIngresar_Clicked" />
+    </StackLayout>
+
+</ContentPage>
